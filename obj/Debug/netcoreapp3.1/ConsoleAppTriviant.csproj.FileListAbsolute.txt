@@ -1,0 +1,11 @@
+C:\Users\Hanneke\source\repos\ConsoleAppTriviant\bin\Debug\netcoreapp3.1\ConsoleAppTriviant.exe
+C:\Users\Hanneke\source\repos\ConsoleAppTriviant\bin\Debug\netcoreapp3.1\ConsoleAppTriviant.deps.json
+C:\Users\Hanneke\source\repos\ConsoleAppTriviant\bin\Debug\netcoreapp3.1\ConsoleAppTriviant.runtimeconfig.json
+C:\Users\Hanneke\source\repos\ConsoleAppTriviant\bin\Debug\netcoreapp3.1\ConsoleAppTriviant.runtimeconfig.dev.json
+C:\Users\Hanneke\source\repos\ConsoleAppTriviant\bin\Debug\netcoreapp3.1\ConsoleAppTriviant.dll
+C:\Users\Hanneke\source\repos\ConsoleAppTriviant\bin\Debug\netcoreapp3.1\ConsoleAppTriviant.pdb
+C:\Users\Hanneke\source\repos\ConsoleAppTriviant\obj\Debug\netcoreapp3.1\ConsoleAppTriviant.csprojAssemblyReference.cache
+C:\Users\Hanneke\source\repos\ConsoleAppTriviant\obj\Debug\netcoreapp3.1\ConsoleAppTriviant.AssemblyInfoInputs.cache
+C:\Users\Hanneke\source\repos\ConsoleAppTriviant\obj\Debug\netcoreapp3.1\ConsoleAppTriviant.AssemblyInfo.cs
+C:\Users\Hanneke\source\repos\ConsoleAppTriviant\obj\Debug\netcoreapp3.1\ConsoleAppTriviant.dll
+C:\Users\Hanneke\source\repos\ConsoleAppTriviant\obj\Debug\netcoreapp3.1\ConsoleAppTriviant.pdb
