@@ -19,10 +19,12 @@ namespace ConsoleAppTriviant
             Console.WriteLine("Kies het juiste antwoord en je krijgt gelijk " +
                 "het resultaat. Zullen we beginnen, geef dan een Enter.");
             Console.ReadLine();
-            
-            int Antwoord;
-            for (int i = 0; i < Vragen.Length; i++) { 
 
+            int Antwoord = 0;
+            int i = 0; 
+            // for (int i = 0; i < Vragen.Length; i++) { 
+            do { 
+                i++;
                 showVraag(i);
           
                 showAntwoorden(i);
@@ -47,10 +49,29 @@ namespace ConsoleAppTriviant
                     {
                         Console.WriteLine(e.Message); 
                     }
-                Console.ReadLine();
-            } 
+                if(i < 5)
+                {
+                    Console.WriteLine("Wilt u nog een vraag beantwoorden?  99 = nee");
+                    try
+                    {
+                        Antwoord = int.Parse(Console.ReadLine()) ;
+                    }
+                    catch
+                    {
+                        Antwoord = 1;
+                    }
+                    
+                }
+                else
+                {
+                    Console.WriteLine("Dit was de laatste vraag!");
+                    Console.ReadLine();
+                }
+                //} 
+                
+            } while(i < Vragen.Length && Antwoord != 99);
             
-            Console.WriteLine("Je hebt " + Score + " punt(en).");
+            Console.WriteLine("Bedankt voor het spelen van triviant. Je hebt " + Score + " punt(en).");
             Console.ReadLine();
         }
         static void maakVragen()
@@ -70,13 +91,13 @@ namespace ConsoleAppTriviant
         static void showVraag(int Nr)
         {
             Console.WriteLine("Vraag "+ Nr + ":");
-            Console.WriteLine(Vragen[Nr]);
+            Console.WriteLine(Vragen[Nr-1]);
             Console.WriteLine("");
         }
         static void showAntwoorden(int Nr)
         {
             int teller = 0;
-            foreach (string antwoord in Antwoorden[Nr])
+            foreach (string antwoord in Antwoorden[Nr-1])
             {
                 teller++;
                 Console.WriteLine((teller) + ". " + antwoord);
@@ -86,7 +107,7 @@ namespace ConsoleAppTriviant
         }
         static int checkAntwoord(int Antw, int Nr)
         {
-            if (Antw == JuisteAntwoord[Nr] + 1)
+            if (Antw == JuisteAntwoord[Nr-1] + 1)
             {
                 return 1;
             }
